@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario Auto-validación</title>
+	<style>
+		#contenedor{
+			background-color: #f9f9f9;
+			display: flex;
+	 		color: #333;
+	 		margin: 0 auto;
+	 		border-radius: 10px;
+	 		box-shadow: 0 4px 4px #999;
+	 		margin-top: 10%;
+		}
+
+		.margin-auto__content{
+			margin: auto;
+			padding-bottom: 2%;
+		}
+		h1{
+			color:#12af1e;
+		}
+		label{
+			color: #350000;
+			font-size: large;
+			padding-left: 15px;
+		}
+		#btEnviar{
+			margin-left: 20px;
+			background-color: #309700;
+			color: white;
+			width: 30%;
+			font-weight: bold;
+		}
+
+		input:invalid {
+  			background-color: #ffdddd;
+		}
+
+		input:valid {
+  			background-color: #ddffdd;
+		}
+
+		input:required {
+  			border-color: black;
+  			border-width: 1px;
+		}
+
+		input:required:invalid {
+  			border-color: #c00000;
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<span class="margin-auto__content">
+			<h1>Formulario HTML5</h1>
+			<form action="/action_page.php" autocomplete="off" method="get">
+				<label form="nombre">Nombre:</label> 
+				<input name="nombre" type="text" maxlength="40" required> 
+				<br><br>
+				<label form="apellidos">Apellidos:</label> 
+				<input name="apellidos" size="35" type="text" maxlength="60" required> 
+				<br><br>
+				<label form="direccion">Dirección:</label> 
+				<input name="direccion" size="45" type="text" maxlength="80"  required> 
+				<br><br>
+				<label form="fechaNacimiento">Fecha de nacimiento:</label>
+				<input type="date" name="fechaNacimiento" required>
+				<br><br>
+				<label form="correo">Correo:</label>
+				<input type="email" minlength="6" size="30" name="correo" maxlength="50"  required>
+				<br><br>
+				<label for="cine">Elige un cine:</label>
+				<select name="cines">
+	  				<option value="cine1">Cine Alcalá</option>
+					<option value="cine2">Cine Guadalajara</option>
+		  			<option value="cine3">Cine Madrid</option>
+				</select> 
+				<br><br>
+  				<label for="card-number">Número de Tarjeta:</label>
+  				<input type="num" id="card-number1" size="4" class="input-cart-number" maxlength="4" required />
+  				<input type="num" id="card-number-2" size="4" class="input-cart-number" maxlength="4" required />
+  				<input type="num" id="card-number-3" size="4" class="input-cart-number" maxlength="4" required />
+ 				<input type="num" id="card-number-4" size="4" class="input-cart-number" maxlength="4" required />
+    			<br><br>
+				<label form="numeroEntrada">Número de entradas:</label>
+				<input type="number" min="1" size="4" max="15" value="1"> 
+				<input type="submit" id="btEnviar" value="ENVIAR">
+			</form>
+		</span>
+	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Vuelos</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Vuelos</h1>
+  <table style="width: 100%; text-align: left;">
+    <tbody>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"> </td>
+        <td colspan="1" rowspan="26" style="vertical-align: top;">
+          <form>
+          <div>
+            <p>
+              <label for="opcionesdeVuelo" style="text-align: left;"> Opciones de Vuelo: </label>
+              <input type="radio" name="miopcion" id="opcionesdeVuelo" value="Ida-Vuelta" style="text-align: end;"  checked> Ida y Vuelta
+              <input type="radio" name="miopcion" id="opcionedeVuelo" value="Solo-ida"> Solo ida &nbsp; </p>
+        
+          <p>
+          <select name="Origen" required>
+            <option value=""> Elige lugar de origen </option>
+              <optgroup label="Alemania"> 
+                <option value="1">Berlin Brandenburg</option> 
+                <option value="2">Dortmund</option> 
+                <option value="3">Erfurt</option> 
+                <option value="4">Frankfurt International</option> 
+                <option value="5">Munster</option> </optgroup> 
+              <optgroup label="Bosnia & Herzegovina"> 
+                <option value="1">Banja Luka</option> </optgroup> 
+              <optgroup label="Chipre"> 
+                <option value="1">Pafos</option> </optgroup> 
+              <optgroup label="Dinamarca"> 
+                <option value="1">Aarhus</option>  
+                <option value="2">Copenhague</option> </optgroup> 
+              <optgroup label="Estonia"> 
+                <option value="1">Tallin</option> </optgroup> 
+              <optgroup label="Finlandia"> 
+                <option value="1">Helsinki</option> </optgroup> 
+              <optgroup label="Hungría"> 
+                <option value="1">Budapest</option> </optgroup>        
+            
+          </select> 
+        
+          <select name="Destino" required>
+            <option value=""> Elige lugar de destino</option>
+            <optgroup label="Alemania"> 
+              <option value="1">Berlin Brandenburg</option> 
+              <option value="2">Dortmund</option> 
+              <option value="3">Erfurt</option> 
+              <option value="4">Frankfurt International</option> 
+              <option value="5">Munster</option> </optgroup> 
+            <optgroup label="Bosnia & Herzegovina"> 
+              <option value="1">Banja Luka</option> </optgroup> 
+            <optgroup label="Chipre"> 
+              <option value="1">Pafos</option> </optgroup> 
+            <optgroup label="Dinamarca"> 
+              <option value="1">Aarhus</option>  
+              <option value="2">Copenhague</option> </optgroup> 
+            <optgroup label="Estonia"> 
+              <option value="1">Tallin</option> </optgroup> 
+            <optgroup label="Finlandia"> 
+              <option value="1">Helsinki</option> </optgroup> 
+            <optgroup label="Hungría"> 
+              <option value="1">Budapest</option> </optgroup>  
+          </select> 
+          
+        
+          <p>Salida: <input type="date" required> Vuelta: <input type="date" required></p>
+          <p><label for="pasajeros" >Pasajeros: </label></p>
+          <p><input type="number" id="pasajeros" name="adultos" value="0" required min="1" style="width: 30pt;"> Adultos (+18)</p>
+          <p><input type="number" id="pasajeroAd" name="adolescentes" value="0" required min="0" style="width: 30pt;"> Adolescentes (12-15) </p>
+          <p><input type="number" id="pasajeroN" name="ninnos" value="0" required min="0" style="width: 30pt;"> Niños (2-11)</p>
+          <p><input type="number" id="pasajeroB" name="bebe" value="0" required min="0" style="width: 30pt;"> Bebé (menor de 2 años)</p>
+          </div>
+         
+          <div>
+            <p><label for="micasilla">Al hacer clic en "Buscar" aceptas las Condiciones de uso del sitio web </label>
+            <input type="checkbox" name="micasilla" id="micasilla" required value="123" style="text-align: left;"></p>
+            <button type="submit" name="enviar_formulario" id="enviar">Enviar</button> 
+          </div> 
+          </form>       
+      </tr>
+      <tr>
+      <td style="vertical-align: top; width: 50px;">
+        <h3><a href="index.html">Entrada</a></h3>
+      </td> </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="vuelos.html">Vuelos</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="cruceros.html">Cruceros</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="hoteles.html">Hoteles</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="vacaciones.html">Vacaciones</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="ofertas.html">Ofertas<br>
+        </a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="seguros.html">Seguros<br>
+        </a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="contacto.html">Contacto<br>
+        </a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="faq.html">FAQ<br>
+        </a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;">
+        <h3><a href="comentarios.html">Comentarios<br>
+        </a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top; width: 50px;"><br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  </body>
+
+</html>

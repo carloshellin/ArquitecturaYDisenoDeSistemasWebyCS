@@ -1,0 +1,228 @@
+h1{
+    text-align: center;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(36, 36, 155);
+}
+.jsp{
+    float: left;
+    margin-left: 20%;
+}
+
+.jspH3{
+    margin-left: 50%; 
+    margin-top: 20%;
+}
+
+.seleccion{
+    text-align: left;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(36, 36, 155);
+}
+
+h6{
+    font-style: italic;
+}
+
+.fotoCabecera{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px crimson;
+    opacity: 80%;
+}
+
+.fotoInicioS{
+    width: 150px; 
+    height: 150px;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(243, 157, 157);
+}
+
+article{
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 15%;
+    padding: 15px;
+    float: left;
+    background: whitesmoke;
+    opacity: 85%;
+}
+
+.artSeleccion{
+    float: left;
+    margin-left: 70px;
+}
+
+.artVuelos{
+    text-align: center;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 0px;
+}
+
+div{
+    padding: 15px;
+    width: auto;
+    background: whitesmoke;
+    opacity: 85%;
+}
+
+.divDialog{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divAdvertencias{
+    float: right;
+    width: 30%;
+    height: 40%;
+}
+
+.divDialogPago{
+    float: right;
+    padding: 30px;
+    width: 30%;
+}
+
+.divDialogAcompañante{
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.divVuelos{
+    margin-left: 20%;
+    margin: 0 auto;
+}
+
+.contenido {
+    float: center;
+    width: 85%;
+}
+
+.principal {
+    float: center;
+    width: 40%;
+    
+}
+
+body{
+    background-image: url("../img/cabecera.jpg");
+    width: 70%;
+}
+
+aside{
+    width: 40%;
+    padding-left: 5px;
+    margin-right: 10%;
+    margin-top: 2%;
+    float: right;
+}
+
+.asideRegistro{
+    float: right;
+    background-color: whitesmoke;
+    opacity: 85%;
+}
+
+
+
+.menu{
+    margin-left: 250px;
+}
+.menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 1em;
+    background-color: #f1ebeb;
+    text-decoration: solid;
+    color: #191C26;
+}
+
+.menu a:hover {
+    background-color: #f7b0b0;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+}
+
+
+input:invalid{
+    background-color: #ffdddd;
+}
+
+input:valid {
+    background-color: #ddffdd;
+}
+
+input:required {
+    border-color: black;
+    border-width: 1px;
+}
+
+input:required:invalid,select:required:invalid {
+    border-color: #c00000;
+}
+
+
+
+button{
+    font-size:large;
+}
+
+.footerAdmin{
+    margin-left: 40%;
+}
+
+
+.tableEstad{
+    margin-left: 150px;
+}
+.divEstad{
+    text-align: center;
+    padding: 2px;
+}
+.divEstadF{
+    text-align: center;
+    margin-left: 400px;
+}
+.tdEstad{
+    text-align: center;
+    margin-left: 100px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.comportamientoEstad{
+    width: 600px;
+    text-align: center;
+}
+.h1Estad,.h5Estad{
+    color: red;
+    text-align: center;
+    margin-left: 30%;
+}
+#tablaViajeros{
+    border: 1px solid black;
+    text-align: center;
+}
+
+

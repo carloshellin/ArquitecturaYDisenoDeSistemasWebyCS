@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Alcala Airlines | Registro </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" href="img/Alcala airlines.png" type="image/x-icon">
+    </header>
+
+    <body>
+        <article><h1> Regístrate</h1>
+            <h2> en Alcala Airlines Millas</h2>
+            <img src="img/Alcala airlines.png" width="300px">
+        </article>
+        <aside id="asideRegistro">
+            <h5> Millas es la forma de agradecer tu confianza en nosotros, tanto si viajas frecuentemente o si viajas
+                por primera vez, podrás tener acceso a descuentos para futuros viajes y para otros servicios.
+            </h5>
+            <h6>Los campos marcados con (*) son obligatorios.</h6>
+            <h2>Tus datos personales</h2>
+            <h6>Los datos introducidos deben coincidir exactamente con los datos de su documento de identificación</h6>
+            <form action="CrearCliente" method="post">
+            <p><select id="selectTratamiento" name="Tratamiento" required>
+                <option selected value="0"> Tratamiento*</option>
+                <option value="1">Sr.</option> 
+                <option value="2">Sra.</option> 
+                <option value="3">Srta.</option> 
+                </select>
+                <input class="obligatorio" type="text" name="nombre" placeholder="Nombre*" required pattern="[A-Za-z]{3,12}"
+                title="Tamaño mínimo: 3. Tamaño máximo: 12"> 
+            </p>
+            <p><input class="obligatorio" type="text" name="apellido1" placeholder="Primer Apellido*" required> 
+                <input type="text" name="apellido2" placeholder="Segundo Apellido"> 
+            </p>
+            <p><input class="obligatorio" type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento*" required></p>
+            <p><select id="selectTipoDoc" name="tipoID" required>
+                <option selected value="0"> Tipo de documento*</option>
+                <option value="1">DNI</option> 
+                <option value="2">NIE</option> 
+                <option value="2">Pasaporte</option> 
+                </select>
+                <input class="obligatorio" type="text" name="numID" placeholder="Número de documento*"
+                required pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9">
+            </p>
+
+            <h2>Tus datos de contacto</h2>
+            <p><input class="obligatorio" type="email" name="correo" placeholder="E-mail*" required></p>
+            <p><datalist id="listaPrefijos">
+                <option value="+34">
+                <option value="+40">    
+                </datalist>
+                <input type="tel" id="prefTelfRegistro" name="prefijo" placeholder="Prefijo*" list="listaPrefijos" required> 
+                <input type="tel" name="telefono" placeholder="Teléfono*" required pattern="[0-9]{9}" minlength="9" maxlength="9">
+            </p>
+
+            <h2>Selecciona tu contraseña</h2>
+            <p><input class="obligatorio" type="password" name="contrasenna" placeholder="Contraseña*" 
+                required pattern="[A-Za-z0-9]+" minlength="8"></p>
+            <p><input class="obligatorio" type="password" id="contraseñaRepRegistro" placeholder="Repite tu contraseña*" required></p> 
+
+            <p><label for="micasilla"> Acepto las condiciones generales del Programa Air Alcala Millas y la política de privacidad </label>
+            <input type="checkbox" id="condicionesRegistro"> </p> 
+            <p><button>Regístrate</button></p>
+        </aside>
+    </body>
+</html>

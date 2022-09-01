@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <script src="js/funcionalidades.js"></script>
+  <title>Funcionalidad 1 - Drag & Drop</title>
+  <style>
+	#div1, #div2, #div3, #div4, #div5, #div6 {
+	  float: left;
+	  width: 150;
+	  height: 60;
+	  margin: 10px;
+	  padding: 10px;
+	  border: 1px solid black;
+	}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Comentarios</h1>
+<br>
+<table style="width: 100%; text-align: left;">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="28" style="vertical-align: top;">
+	  <tr>
+        <div id="div1"  ondrop="drop(event)" ondragover="allowDrop(event)"> 
+          <img id="drag1" src="img/fivestars.png" draggable="true" ondragstart="drag(event)" width="150" height="60" alt=""> 
+		  <img id="drag2" src="img/fourhalfstars.png" draggable="true" ondragstart="drag(event)" width="150" height="60" alt="">
+		  <img id="drag3" src="img/threehalfstars.png" draggable="true" ondragstart="drag(event)" width="150" height="60" alt="">
+		  <img id="drag4" src="img/fourhalfstars.png" draggable="true" ondragstart="drag(event)" width="150" height="60" alt="">
+		  <img id="drag5" src="img/threehalfstars.png" draggable="true" ondragstart="drag(event)" width="150" height="60" alt="">
+		</div> </tr>
+		
+		<tr><td>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p><label>Rubén Velasco: </label></p>
+        <p><label> Buen servicio, todo correcto y en orden. Sin duda lo recomiendo, ha sido una experiencia brutal. </label></p> 
+		</td> </tr>
+
+		<tr><td>
+		<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p><label >Darío Sánchez: </label></p>
+        <p><label>Todo por unos pocos peniques. </label> </p>
+        <p>Buena conexión a wifi tanto en el avión como en el alojamiento, perfecto para pasar memes y animar el ambiente. </p>
+		</td></tr>
+		
+		<tr><td>
+		<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p><label>Dani Ferreiro: </label></p>
+        <label> Decidí preparale una sorpresa a mi jeva y creo que acerté. </label><br>
+        Me habéis salvado la vida con vuestros paquetes y ofertas, después de las vacaciones he podido volver a dormir en la misma cama que ella. <br>
+		</td></tr>
+		
+		<tr><td>
+		<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<p><label>Carlos Hellín: </label></p>
+        <label> El viaje en avión no me ha gustado, todo muy alocado, nada mejor que un viaje en moto para disfrutar del entorno y las vistas. </label><br>
+        En cambio muy bonito el destino, con lugares y gente muy agradable. <br>
+		</td></tr>
+	  
+		<tr><td>
+		<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	    <p><label>Fran Esteban: </label></p>
+        <label> Ni tan mal. Está bien si quieres salir a tomar algo con los amigos, tienen unas terrazas de puta madre.</label><br>
+        Y tienen zonas con buena conexión a internet donde te puedes echar unas buenas partidas al Lol.
+		</td></tr>
+		
+	  </td>
+
+		
+
+    </tr>
+  </tbody>
+</table>
+<br>
+</body>
+</html>

@@ -1,0 +1,49 @@
+h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1, h2 {
+    background: greenyellow;
+}
+
+
+.agrupar {
+    background: aquamarine;
+    clear: both;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+.argumento {
+    text-align:center;
+    font-size: 20px;
+}
+
+.imagen, .audio, .video {
+    background-color: aqua;
+    border: 1px solid black;
+    float: left;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.audio {
+    margin-right: 50px;
+}
+
+
+
+
+

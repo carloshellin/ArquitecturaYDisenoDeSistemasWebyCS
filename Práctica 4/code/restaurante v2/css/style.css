@@ -1,0 +1,50 @@
+body {
+    background: yellowgreen;
+}
+
+.formulario {
+   
+}
+
+.tipoPlatos {
+    font-weight: bold;
+    margin-right: 80px;
+    float: left;
+}
+
+.mesas {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.listas {
+    clear: both;
+    margin-top: 50px;
+
+}
+
+.listaPlatos {
+    width: 200px;
+    height: 125px;
+}
+
+.listaSeleccion {
+    width: 200px;
+    height: 125px;
+}
+
+.checkC {
+    font-weight: bold;
+}
+.checkC, .pagar {
+    margin-left: 200px;
+}
+
+.pagar {
+    background-color:blue;
+    color: white;
+}
+
+.precio {
+    margin-left: 165px;
+}

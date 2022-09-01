@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Restaurante v1</title>
+
+</head>
+
+<body>
+  <form>
+	<div>
+	  <input type="radio" id="primeros" name="radios">
+	  <label for="primeros">Primeros platos</label><br>
+	  <input type="radio" id="segundos" name="radios">
+	  <label for="segundos">Segundos platos</label><br>
+	  <input type="radio" id="postres" name="radios">
+      <label for="postres">Postres</label><br>
+	</div>
+	<div>
+	  <select name="mesas" id="mesas">
+		<option value="mesa1">Mesa1</option>
+		<option value="mesa2">Mesa2</option>
+		<option value="mesa3">Mesa3</option>
+		<option value="mesa4">Mesa4</option>
+		<option value="mesa5">Mesa5</option>
+      </select>
+	</div>
+	<div>
+	  <select name="listaplatos" id="listaplatos" multiple></select>
+	  <select name="platosseleccion" id="platosseleccion" multiple></select>
+	</div>
+	<div>
+	  <p><input type="checkbox" id="cafecheck" name="cafecheck">
+	  <label for="cafecheck">con café</label></p>
+	  <p><input type="checkbox" id="copacheck" name="copacheck">
+	  <label for="copacheck">con copa</label></p>
+	</div>
+	<div>
+	  <button type="button" id="botonpagar">Pagar</button>
+	</div>
+	<div>
+	  <p>Total<input type="text" id="preciototal" value=0 readonly></input>€</p>
+	</div>
+  </form>
+  
+	<script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="js/restaurante.js"></script>
+</body>
+
+</html>

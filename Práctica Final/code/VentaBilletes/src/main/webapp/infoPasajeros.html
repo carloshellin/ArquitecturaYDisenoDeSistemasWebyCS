@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <header>
+    <meta charset="utf-8">
+    <title>Alcala Airlines | Información de pasajeros </title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/Alcala airlines.png" type="image/x-icon">
+    <img class="fotoCabecera" src="img/iconoNombre.png">
+  </header>
+
+  <body>
+    <h1>Reservar - Información sobre el pasajero</h1>
+    <article class="artVuelos"><form action="" method="post">
+      <h2>Rellenar Datos del Pasajero </h2>
+      <p><input type="text" name="numID" placeholder="Número de documentación">
+      <input type="text" name="tipoIdentificacion" placeholder="Tipo de documento"></p>
+      <p><input type="text" name="nombre" placeholder="Nombre"></p>
+      <p><input type="text" name="apellido1" placeholder="apellido1">
+      <input type="text" name="apellido2" placeholder="apellido2"></p>
+      <p><input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+      <input type="text" name="sexo" placeholder="Sexo"></p>
+      </form>
+      <p><form action="pago.jsp">
+        <button>Siguiente</button></form> </p>
+      <p><button onclick="popDialog('acompDialog')">Añadir acompañante</button></p>
+      <footer>En caso de querer cerrar sesión, pulse
+        <a href="logout.jsp"> aquí</a>
+      </footer>
+    </article>
+
+    
+    <div class="divDialogAcompañante" id="acompDialog" hidden>
+      <form action="" method="post">
+      <h1>Añadir Pasajero Acompañante</h1>
+      <p><input type="text" name="numID" placeholder="Número de documentación">
+      <input type="text" name="tipoIdentificacion" placeholder="Tipo de documento"></p>
+      <p><input type="text" name="nombre" placeholder="Nombre"></p>
+      <p><input type="text" name="apellido1" placeholder="apellido1">
+      <input type="text" name="apellido2" placeholder="apellido2"></p>
+      <p><input type="date" name="fechaNacimiento" placeholder="Fecha de nacimiento">
+      <input type="text" name="sexo" placeholder="Sexo"></p>
+      <button onclick="popDialog('acompDialog')">Añadir acompañante</button></form>
+    </div>
+
+    <script>
+      function popDialog(parameter){
+          var x = document.getElementById(parameter);
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+      }
+    </script>
+  </body>
+
+</html>

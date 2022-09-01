@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Funcionalidad 2</title>
+    <style>
+    	img{
+    		width: 5%;
+    	}
+    	#alimentos{
+    		width: 30%;
+    	}
+    	#contenedor{
+    		display: flex;
+			background-color: #f9f9f9;
+	 		color: #333;
+	 		margin: 0 auto;
+	 		border-radius: 10px;
+	 		box-shadow: 0 4px 4px #999;
+	 		margin-top: 10%;
+		}
+		.contenido{
+			margin: auto;
+			padding-bottom: 2%;
+		}
+		h2{
+			color: #0336e7;
+		}
+		.botones{
+			padding:3px;
+            border-radius:10px;
+            font-size:15px;
+            font-weight: bold;
+            border: 1px solid black;
+		}
+
+    </style>
+    <script type="text/javascript">
+    	window.onload = function () {
+    		lista = document.getElementById("listaAlimentos");
+    		noHayAlimentos = document.getElementById("noHayAlimentos");
+    		document.getElementById("btEliminar").addEventListener("click",eliminarLocalStorange);
+    		document.getElementById("eliminarElemento").addEventListener("click", eliminarElemento);
+    		formAlimento = document.getElementById("formularioAlimento");
+    		if(localStorage.length >= 1){
+    			pintarLista();
+    			noHayAlimentos.style.display = "none";
+    		} 
+    	}
+
+    	function crearElemento(padre,texto) {
+            var li = document.createElement("li");
+            var textP = document.createTextNode(texto);
+            li.appendChild(textP);
+            padre.appendChild(li);
+        }
+
+    	function añadirElemento(){
+    		noHayAlimentos.style.display = "none";
+    		var texto = "";
+    		var alimento = formAlimento.elements['alimento'].value;
+    		var cantidad = formAlimento.elements['cant'].value;
+    		var texto = "" + alimento + " " + cantidad;
+    		localStorage.setItem(alimento, cantidad);
+    		eliminarLista();
+    		pintarLista();
+    	}
+
+    	function pintarLista(){
+    		for (var i = 0; i < localStorage.length; i++) {
+                var clave = localStorage.key(i);
+                var valor = localStorage.getItem(clave);
+                var texto = "" + clave + " " + valor;
+                crearElemento(lista, texto);
+            }
+    	}
+
+    	function eliminarLista(){
+    		arrayIls = lista.getElementsByTagName("li");
+            for (var i = arrayIls.length - 1; i >= 0; i--) {
+                lista.removeChild(arrayIls[i]);
+            }
+    	}
+
+    	function eliminarLocalStorange(){
+    		var resultado = window.confirm("¿Desea eliminar el LocalStorange?");
+    		if(resultado == true){
+    			localStorage.clear();
+    			noHayAlimentos.style.display = "block";
+    			eliminarLista();
+    		}
+    	}
+
+    	function eliminarElemento(){
+    		if(localStorage.length >= 1){
+    			var primero = localStorage.key(0);
+    			localStorage.removeItem(primero);
+    			eliminarLista();
+    			pintarLista();
+    			if(localStorage.length == 0) noHayAlimentos.style.display = "block";
+    		}
+    	}
+
+    </script>
+
+</head>
+<body>
+	<div id="contenedor">
+		<div class="contenido">
+			<h2>Alimentos</h2>
+			<form id="formularioAlimento" action="#" onsubmit="añadirElemento()" autocomplete="off">
+				<label >Alimento:</label> 
+				<input type="text" name="alimento" required>
+				<label >Cantidad:</label> 
+				<input type="number" name="cant" min="1" size="3" value="1" max="20" required >
+				<input type="submit" class="botones" name="btAceptar" value="Comprado">
+			</form>
+		
+			<h2>Lista de alimentos comprados</h2>
+			<ul id="listaAlimentos">
+			</ul>
+
+			<div id="noHayAlimentos">
+				<label>No hay alimentos comprados</label>
+				<br>
+				<img id="alimentos" src="https://png.clipart.me/istock/previews/2348/23480379-sad-vegetables.jpg">
+			</div>
+			
+			<button id="eliminarElemento" class="botones">Eliminar el primer elemento de la lista</button>
+			<br><br>
+			<button id="btEliminar" class="botones">
+				<img src="https://cdn-icons-png.flaticon.com/512/39/39220.png">
+				<label>Borrar LocalStorange</label>
+			</button>
+		</div>
+	</div>
+</body>
+</html>
